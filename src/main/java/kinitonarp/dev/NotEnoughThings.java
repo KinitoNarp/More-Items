@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import kinitonarp.dev.items.Macaron;
+import kinitonarp.dev.item.Macaron;
 
 public class NotEnoughThings implements ModInitializer {
 	public static final String MOD_ID = "not-enough-things";

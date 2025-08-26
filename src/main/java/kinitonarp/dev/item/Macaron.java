@@ -1,7 +1,6 @@
-package kinitonarp.dev.items;
+package kinitonarp.dev.item;
 
 import net.minecraft.item.FoodComponent;
-
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
@@ -14,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 
 public class Macaron {
-    public static final Item MACARON = registerItem("macaron",
+    public static final Item MACARON = registerItem("Macaron",
             new Item(new FabricItemSettings()
             .food(new FoodComponent.Builder()
                     .hunger(6)
@@ -22,7 +21,7 @@ public class Macaron {
                     .build())));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier("not-enough-items", "macaron"), item);
+        return Registry.register(Registries.ITEM, new Identifier("macaron", "macaron"), item);
     }
 
     public static void registerModItems() {
