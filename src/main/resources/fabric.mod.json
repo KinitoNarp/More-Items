@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "not-enough-things",
+	"version": "${version}",
+	"name": "Not Enough Things",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/not-enough-things/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"kinitonarp.dev.NotEnoughThings"
+		],
+		"client": [
+			"kinitonarp.dev.NotEnoughThingsClient"
+		]
+	},
+	"mixins": [
+		"not-enough-things.mixins.json",
+		{
+			"config": "not-enough-things.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
