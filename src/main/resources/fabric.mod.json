@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "not-enough-things",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "Not Enough Things",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A minecraft mod that adds cool stuff to the game so you dont suffer of boredom",
 	"authors": [
-		"Me!"
+		"KinitoNarp"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/KinitoNarp/Not-Enough-Things"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/not-enough-things/icon.png",
