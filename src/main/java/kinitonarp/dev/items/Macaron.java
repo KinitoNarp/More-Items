@@ -5,6 +5,8 @@ import net.minecraft.item.FoodComponent;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -15,8 +17,9 @@ import net.minecraft.util.Identifier;
 //}
 
 public class Macaron {
-    public static final Item CUSTOM_FOOD = registerItem("custom_food",
-            new Item(new FabricItemSettings().food(new FoodComponent.Builder()
+    public static final Item MACARON = registerItem("macarons",
+            new Item(new FabricItemSettings()
+            .food(new FoodComponent.Builder()
                     .hunger(6)
                     .saturationModifier(0.6f)
                     .build())));
@@ -26,6 +29,6 @@ public class Macaron {
     }
 
     public static void registerModItems() {
-        System.out.println("Registering Mod Items for modid");
+        System.out.println("Succesfully Loaded Custom Items :D");
     }
 }

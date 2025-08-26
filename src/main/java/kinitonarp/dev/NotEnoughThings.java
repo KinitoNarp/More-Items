@@ -1,6 +1,10 @@
 package kinitonarp.dev;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +22,9 @@ public class NotEnoughThings implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Macaron.registerModItems();
-
 		LOGGER.info("> MOD LOADED!");
-	}
-}
+		// Add the macaron to the Food & Drinks creative tab
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+        entries.add(Macaron.MACARON);
+	});
+}}
