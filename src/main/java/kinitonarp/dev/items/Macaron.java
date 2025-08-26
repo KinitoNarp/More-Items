@@ -22,7 +22,7 @@ public class Macaron {
                     .build())));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier("modid", name), item);
+        return Registry.register(Registries.ITEM, new Identifier("not-enough-items", "macaron"), item);
     }
 
     public static void registerModItems() {

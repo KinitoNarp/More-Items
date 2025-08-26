@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import kinitonarp.dev.items.Macaron;
+
 public class NotEnoughThings implements ModInitializer {
 	public static final String MOD_ID = "not-enough-things";
 
@@ -15,6 +17,7 @@ public class NotEnoughThings implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		Macaron.registerModItems();
 
 		LOGGER.info("> MOD LOADED!");
 	}
