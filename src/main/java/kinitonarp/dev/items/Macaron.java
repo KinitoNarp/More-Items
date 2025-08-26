@@ -12,12 +12,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 
-// public class Macaron {
-//    public static final FoodComponent MACARON = new FoodComponent.Builder().hunger(3).saturationModifier(0.2f).build();
-//}
 
 public class Macaron {
-    public static final Item MACARON = registerItem("macarons",
+    public static final Item MACARON = registerItem("macaron",
             new Item(new FabricItemSettings()
             .food(new FoodComponent.Builder()
                     .hunger(6)
